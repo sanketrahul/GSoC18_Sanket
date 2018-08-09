@@ -34,14 +34,15 @@ The second motivation is to detect 3D objects in robot space and track them for 
 Hardware Used: HTC Vive, Microsoft Kinect, Ubuntu Workstation, Baxter Robot
 
 Work Done during GSoC'18:
-1. Kinect Visualization to HTC Vive using rviz: https://github.com/sanketrahul/Kinect-Rviz-Vive
-2. Position tracking of vive components: code to be merged in vive_ros forked branch  https://github.com/sanketrahul/vive_ros
-3. Add Hardware Safety in vive_ros code: Add SIGTERM in the forked vive_ros for hardware safety https://github.com/sanketrahul/vive_ros
+1. Kinect Visualization to HTC Vive using rviz: In this work we visualized the Baxter environment through the Kinect camera mounted on Baxter robot in HTC Vive via rviz plugin. As explained in the motivation that this is big challenge to carry visualization in Ubuntu with ROS as HTC VIve has beta support for Ubuntu. We have not only successfully visualized the Kinect point cloud data to HTC Vive but also achieved better visualization than Vive-Unity visualization. The details of this work can be found here: https://github.com/sanketrahul/Kinect-Rviz-Vive
+2. Position tracking of vive components: After having successful Kinect-Rviz-Vive visualization, we need position tracking of HTC Vive componets for many reasons like position tracking of humans etc. The details of the code can be found here: https://github.com/sanketrahul/vive_ros
+3. Add Hardware Safety in vive_ros code: Normally when we close the node in vive_ros it abruptly closes the hardware which can sometime damage the Vive hardware. To overcome this problem we added SIGTERM in the forked vive_ros for hardware safety. The detailed code can be found here: https://github.com/sanketrahul/vive_ros
 4. Integration of PCL 3D object detection integration with ROS: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/src/3D_object_detection.cpp 
 
 5. Integration of Pointnet with ROS: https://github.com/sanketrahul/pointnet
 6. Tabletop tracking example: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/example/example_tabletop_object_tracking.txt
 
+Weekly Updates of the Project can be found here: https://docs.google.com/document/d/1MGZXTQCBM0Z9XXLTxmsHaTs0GGwwaTKxy5-jazcHSiw/edit?usp=sharing
 
 Future Work:
 
