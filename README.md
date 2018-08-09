@@ -1,6 +1,8 @@
 # GSoC18_Sanket
 Google Summer of Code 2018 Project on Integration of PCL to ROS
 
+
+
 Aim of the Project: The aim of the project is divided in following 4 parts/stages:
 1. Visualization of Microsoft Kinect point cloud data in HTC Vive through ROS: Using vive_ros and RVIZ_vive_plugin to visualize point cloud data in HTC Vive headset.
 Steps:
@@ -32,12 +34,13 @@ The second motivation is to detect 3D objects in robot space and track them for 
 Hardware Used: HTC Vive, Microsoft Kinect, Ubuntu Workstation, Baxter Robot
 
 Work Done during GSoC'18:
-1. Kinect Visualization to HTC Vive using rviz: Github page for Kinect-Vive-Rviz integration that I did in first phase
-2. Position tracking of vive components code to be merged in vive_ros forked branch 
-3. Add SIGTERM in the forked vive_ros for hardware safety
-4. Complete the 3D object detection integration with ROS
-5. Plan out integration of Pointnet with ROS (if time permits)
-6. May be I can add tabletop tracking example also.
+1. Kinect Visualization to HTC Vive using rviz: https://github.com/sanketrahul/Kinect-Rviz-Vive
+2. Position tracking of vive components: code to be merged in vive_ros forked branch  https://github.com/sanketrahul/vive_ros
+3. Add Hardware Safety in vive_ros code: Add SIGTERM in the forked vive_ros for hardware safety https://github.com/sanketrahul/vive_ros
+4. Integration of PCL 3D object detection integration with ROS: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/src/3D_object_detection.cpp 
+
+5. Integration of Pointnet with ROS: https://github.com/sanketrahul/pointnet
+6. Tabletop tracking example: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/example/example_tabletop_object_tracking.txt
 
 
 Future Work:
