@@ -35,12 +35,16 @@ Hardware Used: HTC Vive, Microsoft Kinect, Ubuntu Workstation, Baxter Robot
 
 Work Done during GSoC'18:
 1. Kinect Visualization to HTC Vive using rviz: In this work we visualized the Baxter environment through the Kinect camera mounted on Baxter robot in HTC Vive via rviz plugin. As explained in the motivation that this is big challenge to carry visualization in Ubuntu with ROS as HTC VIve has beta support for Ubuntu. We have not only successfully visualized the Kinect point cloud data to HTC Vive but also achieved better visualization than Vive-Unity visualization. The details of this work can be found here: https://github.com/sanketrahul/Kinect-Rviz-Vive
-2. Position tracking of vive components: After having successful Kinect-Rviz-Vive visualization, we need position tracking of HTC Vive componets for many reasons like position tracking of humans etc. The details of the code can be found here: https://github.com/sanketrahul/vive_ros
-3. Add Hardware Safety in vive_ros code: Normally when we close the node in vive_ros it abruptly closes the hardware which can sometime damage the Vive hardware. To overcome this problem we added SIGTERM in the forked vive_ros for hardware safety. The detailed code can be found here: https://github.com/sanketrahul/vive_ros
-4. Integration of PCL 3D object detection integration with ROS: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/src/3D_object_detection.cpp 
 
-5. Integration of Pointnet with ROS: https://github.com/sanketrahul/pointnet
-6. Tabletop tracking example: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/example/example_tabletop_object_tracking.txt
+2. Position tracking of vive components: After having successful Kinect-Rviz-Vive visualization, we need position tracking of HTC Vive componets for many reasons like position tracking of humans etc. The details of the code can be found here: https://github.com/sanketrahul/vive_ros
+
+3. Add Hardware Safety in vive_ros code: Normally when we close the node in vive_ros it abruptly closes the hardware which can sometime damage the Vive hardware. To overcome this problem we added SIGTERM in the forked vive_ros for hardware safety. The detailed code can be found here: https://github.com/sanketrahul/vive_ros
+
+4. Integration of PCL 3D object detection integration with ROS: 3D object detection is an interesting problem in robotics. It can help robot reach autonomy. There is already an implementation of 3D object detection in PCL (). But to use in real time application we need to integrate it to ROS. The PCL version takes input of scene and model from .pcd file and outputs the matched object in scene with the model given. In this implementation we have given real-time point cloud data from Kinect as scene to the PCL 3D detection algorithms and outputs the mtached object with the model by highlighting it. The details of the implementation can be found here: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/src/3D_object_detection.cpp 
+
+5. Integration of Pointnet with ROS: Pointnet is an deep learning approach to 3D object detection. In this project we trained the model offline and run the test code by passing real-time point cloud data to detect 3D objects in ROS. The details of the project can be found here: https://github.com/sanketrahul/pointnet
+
+6. Tabletop tracking example: Object tracking is an interesting problem. It has been already implemented in ROS from PCL implementation (https://github.com/jsk-ros-pkg/jsk_recognition/blob/master/jsk_pcl_ros/launch/tracking.launch). But there is no good example to run this nodelet. After some interesting discussion at https://github.com/jsk-ros-pkg/jsk_recognition/issues/2308 we found a good running example. The example to run tabletop tracking can be found here: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/example/example_tabletop_object_tracking.txt
 
 Weekly Updates of the Project can be found here: https://docs.google.com/document/d/1MGZXTQCBM0Z9XXLTxmsHaTs0GGwwaTKxy5-jazcHSiw/edit?usp=sharing
 
