@@ -1,7 +1,7 @@
 # GSoC18_Sanket
 Google Summer of Code 2018 Project on Integration of PCL to ROS
 
-Aim of the Project: The aim of the project was divided in following 4 parts/stages:
+Aim of the Project: The aim of the project is divided in following 4 parts/stages:
 1. Visualization of Microsoft Kinect point cloud data in HTC Vive through ROS: Using vive_ros and RVIZ_vive_plugin to visualize point cloud data in HTC Vive headset.
 Steps:
 i) Setup vive_ros package (https://github.com/robosavvy/vive_ros) on the ubuntu workstation. Check HTC vive working.
@@ -24,3 +24,23 @@ The visualization quality from rviz to HTC Vive headset is not as comparable to 
 i) ROS Reality at Brown: https://www.youtube.com/watch?v=HlRJZYNNndI
 ii) MIT CSAIL work on Teleoperating robots in Virtual Reality:  http://news.mit.edu/2017/mit-csail-new-system-teleoperating-robots-virtual-reality-1009
 iii) Deep imitation learning for complex manipulation tasks from Virtual Reality Teleoperation at UC Berkley: https://arxiv.org/pdf/1710.04615.pdf
+
+Motivation: The key motivation for this project is to create successful Kinect Visualization to HTC Vive in Ubuntu and ROS environment. This has been carried out by using Windows machine and Unity engine and transfering data via internet to Ubuntu machine. But this process can loss some packets over internet and also has some delay in transfer. 
+
+The second motivation is to detect 3D objects in robot space and track them for implementing concepts for dynamical changing goals. This can also help in achieving robust robotic teleoperation. Also, the integration of filters in pcl_ros can help to segment objects well. Finally with all this we can do faster and better robotic teleoperation for pick and place of objects.
+
+Hardware Used: HTC Vive, Microsoft Kinect, Ubuntu Workstation, Baxter Robot
+
+Work Done during GSoC'18:
+1. Kinect Visualization to HTC Vive using rviz: Github page for Kinect-Vive-Rviz integration that I did in first phase
+2. Position tracking of vive components code to be merged in vive_ros forked branch 
+3. Add SIGTERM in the forked vive_ros for hardware safety
+4. Complete the 3D object detection integration with ROS
+5. Plan out integration of Pointnet with ROS (if time permits)
+6. May be I can add tabletop tracking example also.
+
+
+Future Work:
+
+Limitations:
+
