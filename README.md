@@ -48,5 +48,5 @@ Limitations/Difficulties:
 1. There were lot of issues with dealing with compatible version of softwares used with different hardwares in the project.
 2. Lot of issues with istallation of pcl, pcl_ros and jsk_pcl_ros git repo. 
 3. HTC Vive is still in beta phase for Ubuntu OS. So, all the functionalities are not available. HTC Vive has good support for running in Windows OS.
-4. 
+4. The project requires high performance computing as it use Kinect depth point cloud data. So, we required to install GPU in our workstation for fast processing.
 
