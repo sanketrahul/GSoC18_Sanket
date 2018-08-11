@@ -10,10 +10,7 @@ Rough Idea of carrying out visualization:
 Currently, through pcl_ros libraries, we can visualize point cloud data to the desktop. 
 We can leverage this technique to publish point cloud data through RVIZ on the vive node. 
 This may need some code engineering for ROS on the vive_ros and Rviz_vive_plugin to work for our purpose.
-Limitations: 
-HTC Vive is still in beta phase for Ubuntu OS. So, all the functionalities are not available. HTC Vive has good support for running in Windows OS.
 In theory it looks possible to publish depth point cloud data to HTC Vive through RVIZ but it seems nobody has achieved till now.
-The visualization quality from rviz to HTC Vive headset is not as comparable to Unity engine. 
  
 2. Integrating pcl_libraries for 3-D object detection with vive_ros: There are already methods implemented in pcl_ros for detecting 3-D objects. After visualizing the robot workspace in HTC Vive, it would be good to use these techniques to detect the object. This will help the operator to manipulate the objects easily in VR (Virtual Reality). This will also help in effective robotic teleoperation and other applications.
 
@@ -47,6 +44,9 @@ Weekly Updates of the Project can be found here: https://docs.google.com/documen
 
 Future Work:
 
-Limitations:
-
+Limitations/Difficulties:
+1. There were lot of issues with dealing with compatible version of softwares used with different hardwares in the project.
+2. Lot of issues with istallation of pcl, pcl_ros and jsk_pcl_ros git repo. 
+3. HTC Vive is still in beta phase for Ubuntu OS. So, all the functionalities are not available. HTC Vive has good support for running in Windows OS.
+4. 
 
