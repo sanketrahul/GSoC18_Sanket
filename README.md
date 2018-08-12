@@ -36,13 +36,16 @@ Work Done during GSoC'18:
 
 4. Integration of PCL 3D object detection integration with ROS: 3D object detection is an interesting problem in robotics. It can help robot reach autonomy. There is already an implementation of 3D object detection in PCL (http://www.pointclouds.org/documentation/tutorials/correspondence_grouping.php#correspondence-grouping). But to use in real time application we need to integrate it into ROS. The PCL version takes the input of scene and model from a .pcd file and outputs the matched object in the scene with the model given. In this implementation, we have given real-time point cloud data from Kinect as the scene to the PCL 3D detection algorithms and outputs the matched object with the model by highlighting it. The details of the implementation can be found here: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/src/3D_object_detection.cpp 
 
-5. Integration of Pointnet with ROS: Pointnet is a deep learning approach to 3D object detection. In this project, we trained the model offline and run the test code by passing real-time point cloud data to detect 3D objects in ROS. The details of the project can be found here: https://github.com/sanketrahul/pointnet
+5. Integration of Pointnet with ROS: Pointnet is a deep learning approach to 3D object detection. In this project, we trained the model offline and run the test code by passing real-time point cloud data to detect 3D objects in ROS. Most of the code is still in development phase. Due to time scarcity I just had planned and done the ground work for this. I will implement the code in future work. The details of the project can be found here: https://github.com/sanketrahul/pointnet
 
 6. Tabletop tracking example: Object tracking is an interesting problem. It has been already implemented in ROS from PCL implementation (https://github.com/jsk-ros-pkg/jsk_recognition/blob/master/jsk_pcl_ros/launch/tracking.launch). But there is no good example to run this nodelet. After some interesting discussion at https://github.com/jsk-ros-pkg/jsk_recognition/issues/2308, we found a good running example. The example to run tabletop tracking can be found here: https://github.com/sanketrahul/jsk_recognition/blob/master/jsk_pcl_ros/example/example_tabletop_object_tracking.txt
 
 Weekly Updates of the Project can be found here: https://docs.google.com/document/d/1MGZXTQCBM0Z9XXLTxmsHaTs0GGwwaTKxy5-jazcHSiw/edit?usp=sharing
 
 Future Work:
+1. Improving and optimizing the object detection code 
+2. Integrating Pointnet with ROS
+3. Integrating object tracking code with our kinect-rviz-vive code in order to deal with dynamic changing goal problem for robotic teleoperation.
 
 Limitations/Difficulties:
 1. There were lot of issues with dealing with compatible version of softwares used with different hardwares in the project.
