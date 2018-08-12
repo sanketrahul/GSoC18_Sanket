@@ -1,6 +1,6 @@
 # Google Summer of Code 2018 Project on Integration of PCL to ROS
 
- GSoC18_Sanket/Images/better_screenshot.png 
+ ![prediction example] https://github.com/sanketrahul/GSoC18_Sanket/blob/master/Images/better_screenshot.png 
  
 Aim of the Project: The aim of the project is divided in following 4 parts/stages:
 1. Visualization of Microsoft Kinect point cloud data in HTC Vive through ROS: Using vive_ros and RVIZ_vive_plugin to visualize point cloud data in HTC Vive headset.
