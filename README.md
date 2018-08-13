@@ -32,7 +32,10 @@ Hardware Used: HTC Vive, Microsoft Kinect, Ubuntu Workstation, Baxter Robot
 Work Done during GSoC'18:
 1. Kinect Visualization to HTC Vive using rviz: In this work, we visualized the Baxter environment through the Kinect camera mounted on Baxter robot in HTC Vive via rviz plugin. As explained in the motivation that this is a big challenge to carry visualization in Ubuntu with ROS as HTC VIve has beta support for Ubuntu. We have not only successfully visualized the Kinect point cloud data to HTC Vive but also achieved better visualization than Vive-Unity visualization. The details of this work can be found here: https://github.com/sanketrahul/Kinect-Rviz-Vive
 
-2. Position tracking of vive components: After having successful Kinect-Rviz-Vive visualization, we need position tracking of HTC Vive components for many reasons like position tracking of humans etc. The details of the code can be found here: https://github.com/sanketrahul/vive_ros
+2. Position tracking of vive components: After having successful Kinect-Rviz-Vive visualization, we need position tracking of HTC Vive components for many reasons like position tracking of humans etc. This part of the work is divided in two parts:
+ 2.1. Publishing HTC vive components data: The position and rotation data of HTC Vive Heatset and 2 Controller are                published on vive_ros node in form of twisted messages. This can be used for position tracking of HTC vive components.             The details of the code can be found here: https://github.com/sanketrahul/vive_ros/commit/c4d58f08b8e4d0637329f10020c1336a5bf760c9#diff-a5e0bcae9344b8634e6940607506d55f
+  2.2. Subscribe to vive_ros node to fetch and store HTC Vive components data:
+  The details of the code can be found here: https://github.com/sanketrahul/vive_ros/commit/c4d58f08b8e4d0637329f10020c1336a5bf760c9#diff-a5e0bcae9344b8634e6940607506d55f
 
 3. Add Hardware Safety in vive_ros code: Normally when we close the node in vive_ros it abruptly closes the hardware which can sometimes damage the Vive hardware. To overcome this problem we added SIGTERM in the forked vive_ros for hardware safety. The detailed code can be found here: https://github.com/sanketrahul/vive_ros/commit/39ac5f104a1e3332a4c202113d701e95d3af1bf6#diff-a5e0bcae9344b8634e6940607506d55f 
 
