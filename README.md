@@ -4,10 +4,7 @@
  
 Aim of the Project: The aim of the project is divided in following 4 parts/stages:
 1. Visualization of Microsoft Kinect point cloud data in HTC Vive through ROS: Using vive_ros and RVIZ_vive_plugin to visualize point cloud data in HTC Vive headset.
-Steps:
-i) Setup vive_ros package (https://github.com/robosavvy/vive_ros) on the ubuntu workstation. Check HTC vive working.
-ii) Setup Rviz_vive_plugin (https://github.com/AndreGilerson/rviz_vive_plugin)                      which allows RVIZ to render to the HTC Vive.
-iii) Setup pcl_ros libraries
+
 Rough Idea of carrying out visualization:
 Currently, through pcl_ros libraries, we can visualize point cloud data to the desktop. 
 We can leverage this technique to publish point cloud data through RVIZ on the vive node. 
