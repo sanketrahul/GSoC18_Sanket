@@ -50,4 +50,4 @@ Limitations/Difficulties:
 3. HTC Vive is still in beta phase for Ubuntu OS. So, all the functionalities are not available. HTC Vive has good support for running in Windows OS.
 4. The project requires high performance computing as it use Kinect depth point cloud data. So, we required to install GPU in our workstation for fast processing.
 
-Credits: This work has been carried out for Google Summer of Code 2018 under mentorship of Prof. Kei Okada (@k-okada)
+Credits: This work has been carried out for Google Summer of Code 2018 under the mentorship of Prof. Kei Okada (@k-okada)
