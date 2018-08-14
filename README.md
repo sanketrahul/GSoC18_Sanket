@@ -4,12 +4,6 @@
  
 Aim of the Project: The aim of the project is divided in following 4 parts/stages:
 1. Visualization of Microsoft Kinect point cloud data in HTC Vive through ROS: Using vive_ros and RVIZ_vive_plugin to visualize point cloud data in HTC Vive headset.
-
-Rough Idea of carrying out visualization:
-Currently, through pcl_ros libraries, we can visualize point cloud data to the desktop. 
-We can leverage this technique to publish point cloud data through RVIZ on the vive node. 
-This may need some code engineering for ROS on the vive_ros and Rviz_vive_plugin to work for our purpose.
-In theory, it looks possible to publish depth point cloud data to HTC Vive through RVIZ but it seems nobody has achieved till now.
  
 2. Integrating pcl_libraries for 3-D object detection with vive_ros: There are already methods implemented in pcl_ros for detecting 3-D objects. After visualizing the robot workspace in HTC Vive, it would be good to use these techniques to detect the object placed in Robot space. This will help the operator to manipulate the objects easily in VR(Virtual Reality). This will also help in effective robotic teleoperation and other applications.
 
